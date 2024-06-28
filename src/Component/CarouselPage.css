@@ -1,0 +1,98 @@
+.quote-text {
+  font-family: "Great Vibes", "cursive";
+  font-size: 5rem;
+  color: #fff;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  padding-top: 1rem;
+}
+
+.author-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2em;
+  background: linear-gradient(
+    45deg,
+    #ff4d4d,
+    #d15a40,
+    #ff4d4d,
+    #d15a40,
+    #8d2424
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 1.5rem;
+  margin-left: 70%;
+}
+
+.carousel-wrapper {
+  margin: 0 auto;
+  position: relative;
+}
+
+.quote-container {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* .carousel-indicators [data-bs-target] {
+  visibility: hidden;
+} */
+
+.carousel-index {
+  display: flex;
+  font-size: 2rem;
+  justify-content: space-around;
+  color: #fff;
+  padding: 10px;
+}
+
+.Icons {
+  display: flex;
+  gap: 1rem;
+  margin-left: 10rem;
+}
+
+.carousel-wrapper {
+  background-image: url("./image1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 15px 15px 15px;
+}
+.carousel-item img {
+  max-height: 70vh;
+  object-fit: cover;
+}
+
+/* Google Translate CSS */
+
+.translated-ltr {
+  margin-top: -40px;
+}
+.translated-ltr {
+  margin-top: -40px;
+}
+.goog-te-banner-frame {
+  display: none;
+  margin-top: -20px;
+}
+.goog-logo-link {
+  display: none !important;
+}
+.goog-te-gadget {
+  color: transparent !important;
+}
+.VIpgJd-ZVi9od-l4eHX-hSRGPd {
+  display: none;
+  border-radius: 5px;
+}
+.VIpgJd-ZVi9od-ORHb-OEVmcd {
+  display: none;
+}
+.goog-te-gadget .goog-te-combo {
+  border-radius: 5px;
+  width: 100%;
+  height: 2rem !important;
+}

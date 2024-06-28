@@ -2,30 +2,28 @@ const goodThoughts = [
   {
     id: 1,
     authorName: "Rabindranath Tagore",
-    quote:
-      "You can't cross the sea merely by standing and staring at the water.",
+    quote: `" You can't cross the sea merely by standing and staring at the water."`,
   },
   {
     id: 2,
     authorName: "Mahatma Gandhi",
-    quote: "Be the change that you wish to see in the world.",
+    quote: `" Be the change that you wish to see in the world."`,
   },
   {
     id: 3,
     authorName: "Swami Vivekananda",
-    quote: "Arise, awake, and stop not till the goal is reached.",
+    quote: `" Arise, awake, and stop not till the goal is reached."`,
   },
   {
     id: 4,
     authorName: "A. P. J. Abdul Kalam",
-    quote:
-      "Dream, dream, dream. Dreams transform into thoughts and thoughts result in action.",
+    quote: "Dreams transform into thoughts and thoughts result in action.",
   },
   {
     id: 5,
-    authorName: "Sardar Vallabhbhai Patel",
+    authorName: "Mother Teresa",
     quote:
-      "Manpower without unity is not a strength unless it is harmonized and united properly, then it becomes a spiritual power.",
+      "Spread love everywhere you go. Let no one ever come to you without leaving happier.",
   },
   {
     id: 6,
@@ -91,9 +89,8 @@ const goodThoughts = [
   },
   {
     id: 17,
-    authorName: "Amitabh Bachchan",
-    quote:
-      "Bad luck either destroys you or makes you the man or woman you really are.",
+    authorName: "Narendra Modi",
+    quote: "Hard work never brings fatigue. It brings satisfaction.",
   },
   {
     id: 18,
@@ -167,3 +164,4 @@ const goodThoughts = [
     quote: "A true champion works hard and never loses sight of her dreams.",
   },
 ];
+export default goodThoughts;
