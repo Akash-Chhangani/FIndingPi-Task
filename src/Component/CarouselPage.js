@@ -22,6 +22,35 @@ const CarouselPage = () => {
     setLiked(!liked);
   };
 
+  const handleShare = () => {
+    const shareData = {
+      title: "Good Thoughts",
+      text: "Check out these good thoughts!",
+      url: window.location.href,
+    };
+
+    if (navigator.share) {
+      navigator
+        .share(shareData)
+        .catch((error) => console.error("Error sharing", error));
+    } else {
+      // Fallbacks
+      const shareUrl = encodeURIComponent(window.location.href);
+      const shareText = encodeURIComponent("Check out these good thoughts!");
+
+      // Email
+      const emailUrl = `mailto:?subject=${shareText}&body=${shareUrl}`;
+      // WhatsApp
+      const whatsappUrl = `https://api.whatsapp.com/send?text=${shareText}%20${shareUrl}`;
+      // Twitter
+      const twitterUrl = `https://twitter.com/intent/tweet?text=${shareText}%20${shareUrl}`;
+
+      window.open(emailUrl, "_blank");
+      window.open(whatsappUrl, "_blank");
+      window.open(twitterUrl, "_blank");
+    }
+  };
+
   return (
     <>
       <Container>
@@ -91,7 +120,9 @@ const CarouselPage = () => {
                   justifyContent: "center",
                   color: "black",
                   margin: 1,
+                  cursor: "pointer",
                 }}
+                onClick={handleShare}
               >
                 <ShareIcon sx={{ fontSize: "2.5rem" }} />
               </Box>
